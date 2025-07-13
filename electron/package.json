@@ -1,0 +1,66 @@
+{
+  "name": "resume-optimizer",
+  "version": "1.0.0",
+  "description": "AI-powered resume optimization tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never",
+    "pack": "electron-builder --dir"
+  },
+  "keywords": ["resume", "ai", "optimization", "job", "career"],
+  "author": "Resume Optimizer Team",
+  "license": "MIT",
+  "build": {
+    "appId": "com.resumeoptimizer.app",
+    "productName": "Resume Optimizer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "../frontend_build/**/*",
+      "../backend_build/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": {
+        "target": "dmg",
+        "arch": ["arm64", "x64"]
+      },
+      "hardenedRuntime": true,
+      "entitlements": "entitlements.mac.plist",
+      "entitlementsInherit": "entitlements.mac.plist"
+    },
+    "dmg": {
+      "title": "Resume Optimizer",
+      "backgroundColor": "#ffffff",
+      "window": {
+        "width": 540,
+        "height": 380
+      },
+      "contents": [
+        {
+          "x": 140,
+          "y": 150,
+          "type": "file"
+        },
+        {
+          "x": 400,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "extraMetadata": {
+      "main": "main.js"
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.2.1",
+    "electron-builder": "^26.0.12"
+  }
+}

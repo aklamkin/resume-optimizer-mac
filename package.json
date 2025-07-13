@@ -1,0 +1,45 @@
+{
+  "name": "resume-optimizer-mac",
+  "version": "1.0.0",
+  "description": "AI-powered resume optimization tool for macOS",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev:backend": "cd backend && source venv/bin/activate && python server.py",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:electron": "cd electron && npm start",
+    "build": "./scripts/build.sh",
+    "test": "./scripts/test_app.sh",
+    "clean": "rm -rf backend/dist frontend/build electron/dist electron/frontend_build electron/backend_build",
+    "setup": "cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && cd ../frontend && npm install && cd ../electron && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/resume-optimizer-mac.git"
+  },
+  "keywords": [
+    "resume",
+    "ai",
+    "optimization",
+    "job",
+    "career",
+    "macos",
+    "electron",
+    "react",
+    "fastapi",
+    "gemini"
+  ],
+  "author": "Resume Optimizer Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/resume-optimizer-mac/issues"
+  },
+  "homepage": "https://github.com/your-username/resume-optimizer-mac#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "workspaces": [
+    "frontend",
+    "electron"
+  ]
+}
