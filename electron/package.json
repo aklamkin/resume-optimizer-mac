@@ -9,7 +9,13 @@
     "dist": "electron-builder --publish=never",
     "pack": "electron-builder --dir"
   },
-  "keywords": ["resume", "ai", "optimization", "job", "career"],
+  "keywords": [
+    "resume",
+    "ai",
+    "optimization",
+    "job",
+    "career"
+  ],
   "author": "Resume Optimizer Team",
   "license": "MIT",
   "build": {
@@ -21,14 +27,17 @@
     "files": [
       "main.js",
       "preload.js",
-      "../frontend_build/**/*",
-      "../backend_build/**/*"
+      "frontend_build/**/*",
+      "backend_build/**/*"
     ],
     "mac": {
       "category": "public.app-category.productivity",
       "target": {
         "target": "dmg",
-        "arch": ["arm64", "x64"]
+        "arch": [
+          "arm64",
+          "x64"
+        ]
       },
       "hardenedRuntime": true,
       "entitlements": "entitlements.mac.plist",
@@ -57,7 +66,8 @@
     },
     "extraMetadata": {
       "main": "main.js"
-    }
+    },
+    "electronVersion": "37.2.1"
   },
   "devDependencies": {
     "electron": "^37.2.1",

@@ -22,8 +22,8 @@ A complete standalone Mac application that uses Google Gemini AI to analyze and 
 ## 📦 Downloads
 
 ### Pre-built Applications
-- **Apple Silicon Macs (M1/M2/M3)**: [Download ARM64 DMG](https://github.com/your-username/resume-optimizer-mac/releases/latest/download/Resume%20Optimizer-1.0.0-arm64.dmg)
-- **Intel Macs**: [Download x64 DMG](https://github.com/your-username/resume-optimizer-mac/releases/latest/download/Resume%20Optimizer-1.0.0.dmg)
+- **Apple Silicon Macs (M1/M2/M3)**: [Download ARM64 DMG](https://github.com/aklamkin/resume-optimizer-mac/releases/latest/download/Resume%20Optimizer-1.0.0-arm64.dmg)
+- **Intel Macs**: [Download x64 DMG](https://github.com/aklamkin/resume-optimizer-mac/releases/latest/download/Resume%20Optimizer-1.0.0.dmg)
 
 ### System Requirements
 - macOS 10.14 (Mojave) or later
@@ -192,8 +192,8 @@ cd frontend && npm test
 ## 🛟 Support
 
 - **Documentation**: Check `/docs` folder
-- **Issues**: [GitHub Issues](https://github.com/your-username/resume-optimizer-mac/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/resume-optimizer-mac/discussions)
+- **Issues**: [GitHub Issues](https://github.com/aklamkin/resume-optimizer-mac/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/aklamkin/resume-optimizer-mac/discussions)
 - **API Help**: [Google AI Studio](https://aistudio.google.com/)
 
 ## 📄 License
